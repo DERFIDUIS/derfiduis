@@ -1,0 +1,28 @@
+** sch_path: /home/karlajcm/Documentos/TESIS DE
+*+ GRADO/WORK_IN_PROGRESS/My_xschem/For_Layout/voltage_limiter.sch
+.subckt voltage_limiter vss vrec vdd
+*.PININFO vss:B vrec:B vdd:B
+M4 net5 net3 vss vss sky130_fd_pr__nfet_01v8_lvt L=0.7 W=2 nf=1 m=1
+M51 vss net5 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+M11 net1 net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+M21 net2 net2 net1 vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+M31 net3 net3 net2 vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+M12 net1 net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+M22 net2 net2 net1 vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+M32 net3 net3 net2 vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+M52 vss net5 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+M53 vss net5 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+M54 vss net5 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+XR24 net4 net3 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR23 net6 net4 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR22 net7 net6 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR21 vss net7 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR36 net12 vdd vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR35 net11 net12 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR34 net10 net11 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR33 net9 net10 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR32 net8 net9 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR31 net5 net8 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR2 vdd vrec vss sky130_fd_pr__res_xhigh_po_5p73 L=11.46 mult=1 m=1
+.ends
+.end

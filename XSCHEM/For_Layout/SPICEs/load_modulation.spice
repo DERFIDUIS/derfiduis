@@ -1,0 +1,7 @@
+** sch_path: /home/karlajcm/Documentos/TESIS DE
+*+ GRADO/WORK_IN_PROGRESS/My_xschem/For_Layout/load_modulation.sch
+.subckt load_modulation vss outn outp vosc
+*.PININFO vss:B outn:B outp:B vosc:B
+M1 outp vosc outn vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+.ends
+.end

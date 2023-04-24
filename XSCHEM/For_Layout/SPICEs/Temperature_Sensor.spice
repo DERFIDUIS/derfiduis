@@ -1,0 +1,43 @@
+** sch_path: /home/karlajcm/Documentos/TESIS DE
+*+ GRADO/WORK_IN_PROGRESS/My_xschem/For_Layout/Temperature_Sensor.sch
+.subckt Temperature_Sensor vdd vss vtemp iin
+*.PININFO vdd:B vss:B vtemp:B iin:B
+M71 net1 vn net2 vss sky130_fd_pr__nfet_01v8_lvt L=2 W=5 nf=1 m=1
+M81 vtemp vp net2 vss sky130_fd_pr__nfet_01v8_lvt L=0.5 W=5 nf=1 m=1
+M112 net2 iin vss vss sky130_fd_pr__nfet_01v8 L=2 W=5 nf=1 m=1
+M91 net1 net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=1
+M101 vtemp net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=1
+M5 net3 net3 vn vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+Q3 vss vss vn sky130_fd_pr__pnp_05v5_W3p40L3p40 NE=1 m=1
+M61 vdd net3 vp vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+Q4 vss vss vp sky130_fd_pr__pnp_05v5_W3p40L3p40 NE=1 m=1
+M1 iin iin vss vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+M2 net4 iin vss vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+M3 net4 net4 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=4 nf=1 m=1
+M4 net3 net4 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=4 nf=1 m=1
+M62 vdd net3 vp vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+M63 vdd net3 vp vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+M64 vdd net3 vp vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+M65 vdd net3 vp vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+M66 vdd net3 vp vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+M67 vdd net3 vp vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+M68 vdd net3 vp vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+M69 vdd net3 vp vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+M610 vdd net3 vp vss sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 m=1
+M92 net1 net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=1
+M93 net1 net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=1
+M94 net1 net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=1
+M102 vtemp net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=1
+M103 vtemp net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=1
+M104 vtemp net1 vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=5 nf=1 m=1
+M72 net1 vn net2 vss sky130_fd_pr__nfet_01v8_lvt L=2 W=5 nf=1 m=1
+M73 net1 vn net2 vss sky130_fd_pr__nfet_01v8_lvt L=2 W=5 nf=1 m=1
+M74 net1 vn net2 vss sky130_fd_pr__nfet_01v8_lvt L=2 W=5 nf=1 m=1
+M82 vtemp vp net2 vss sky130_fd_pr__nfet_01v8_lvt L=0.5 W=5 nf=1 m=1
+M83 vtemp vp net2 vss sky130_fd_pr__nfet_01v8_lvt L=0.5 W=5 nf=1 m=1
+M84 vtemp vp net2 vss sky130_fd_pr__nfet_01v8_lvt L=0.5 W=5 nf=1 m=1
+M111 net2 iin vss vss sky130_fd_pr__nfet_01v8 L=2 W=5 nf=1 m=1
+M113 net2 iin vss vss sky130_fd_pr__nfet_01v8 L=2 W=5 nf=1 m=1
+M114 net2 iin vss vss sky130_fd_pr__nfet_01v8 L=2 W=5 nf=1 m=1
+.ends
+.end

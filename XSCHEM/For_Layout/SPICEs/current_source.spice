@@ -1,0 +1,23 @@
+** sch_path: /home/karlajcm/Documentos/TESIS DE
+*+ GRADO/WORK_IN_PROGRESS/My_xschem/For_Layout/current_source.sch
+.subckt current_source vdd vss iout bgr outop
+*.PININFO vdd:B vss:B iout:B bgr:B outop:B
+XC1 outop net2 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+M1 net1 outop vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=8 nf=1 m=1
+M2 net2 bgr net1 vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+M31 net4 outop vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=8 nf=1 m=1
+M41 iout bgr net4 vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+M32 net4 outop vdd vdd sky130_fd_pr__pfet_01v8_lvt L=2 W=8 nf=1 m=1
+M42 iout bgr net4 vdd sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 m=1
+XR11 net3 net2 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR12 net5 net3 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR13 net6 net5 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR14 net7 net6 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR15 net8 net7 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR16 net9 net8 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR17 net10 net9 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR18 net11 net10 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR19 net12 net11 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR20 vss net12 vss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+.ends
+.end
