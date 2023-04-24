@@ -1,0 +1,34 @@
+** sch_path: /home/karlajcm/Documentos/TESIS DE
+*+ GRADO/WORK_IN_PROGRESS/My_xschem/For_Layout/rectifier_lvt_01v8_end.sch
+.subckt rectifier_lvt_01v8_end vinp vinn vss out2 out1
+*.PININFO vinp:B vinn:B vss:B out2:B out1:B
+XC1 vinp net2 sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=1 m=1
+XC2 net1 vinn sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=1 m=1
+M11 net2 net1 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M21 net1 net2 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M31 net2 net1 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+M41 net1 net2 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+M12 net2 net1 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M13 net2 net1 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M14 net2 net1 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M15 net2 net1 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M16 net2 net1 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M22 net1 net2 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M23 net1 net2 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M24 net1 net2 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M25 net1 net2 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M26 net1 net2 out1 vss sky130_fd_pr__nfet_01v8_lvt L=0.18 W=5 nf=1 m=1
+M32 net2 net1 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+M33 net2 net1 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+M34 net2 net1 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+M35 net2 net1 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+M36 net2 net1 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+M42 net1 net2 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+M43 net1 net2 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+M44 net1 net2 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+M45 net1 net2 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+M46 net1 net2 out2 out2 sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+XC31 out2 vss sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=1 m=1
+XC32 out2 vss sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=1 m=1
+.ends
+.end

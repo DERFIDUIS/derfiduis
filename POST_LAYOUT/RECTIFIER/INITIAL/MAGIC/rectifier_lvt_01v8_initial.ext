@@ -1,0 +1,43 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__pfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+port "vinp" 0 11974 4946 15182 5906 m4
+port "vinn" 1 11974 -12424 15182 -11464 m4
+port "out2" 3 14958 -4668 15182 -1864 m1
+port "vss" 2 11974 -4514 12198 -1798 m1
+node "vinp" 34933 18242.4 11974 4946 m4 0 0 0 0 0 0 0 0 174000 6348 174000 6348 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 790344 29976 0 0 266832 17328 809032 23424 649280 18524 2273480 23400 24143408 21468 0 0 0 0
+node "vinn" 34931 24236.1 11974 -12424 m4 0 0 0 0 0 0 0 0 174000 6348 174000 6348 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 790344 29976 0 0 266832 17328 800228 23328 637464 18308 23296868 36420 24586112 21744 0 0 0 0
+node "out2" 65621 12192.7 14958 -4668 m1 0 0 0 0 3045600 7476 0 0 558000 15116 720000 25440 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 651168 39596 2157376 28208 314496 5840 0 0 0 0 0 0 0 0
+substrate "vss" 0 0 11974 -4514 m1 0 0 0 0 0 0 0 0 720000 25440 558000 15116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 651168 39596 2164928 27804 303520 5644 0 0 0 0 0 0 0 0
+cap "out2" "vinn" 8467.54
+cap "vinp" "vinn" 14823.5
+cap "vinp" "out2" 9974.1
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14492 -4436 14493 -4435 l=36 w=1000 "vss" "vinp" 72 0 "vinn" 1000 0 "vss" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14398 -4436 14399 -4435 l=36 w=1000 "vss" "vinp" 72 0 "vss" 1000 0 "vinn" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14156 -4436 14157 -4435 l=36 w=1000 "vss" "vinn" 72 0 "vinp" 1000 0 "vss" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 14062 -4436 14063 -4435 l=36 w=1000 "vss" "vinn" 72 0 "vss" 1000 0 "vinp" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 13820 -4436 13821 -4435 l=36 w=1000 "vss" "vinp" 72 0 "vinn" 1000 0 "vss" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 13726 -4436 13727 -4435 l=36 w=1000 "vss" "vinp" 72 0 "vss" 1000 0 "vinn" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 13484 -4436 13485 -4435 l=36 w=1000 "vss" "vinn" 72 0 "vinp" 1000 0 "vss" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 13390 -4436 13391 -4435 l=36 w=1000 "vss" "vinn" 72 0 "vss" 1000 0 "vinp" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 13148 -4436 13149 -4435 l=36 w=1000 "vss" "vinp" 72 0 "vinn" 1000 0 "vss" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 13054 -4436 13055 -4435 l=36 w=1000 "vss" "vinp" 72 0 "vss" 1000 0 "vinn" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 12812 -4436 12813 -4435 l=36 w=1000 "vss" "vinn" 72 0 "vinp" 1000 0 "vss" 1000 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 12718 -4436 12719 -4435 l=36 w=1000 "vss" "vinn" 72 0 "vss" 1000 0 "vinp" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 14662 -2960 14663 -2959 l=70 w=1000 "out2" "vinp" 140 0 "vinn" 1000 0 "out2" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 14534 -2960 14535 -2959 l=70 w=1000 "out2" "vinp" 140 0 "out2" 1000 0 "vinn" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 14258 -2960 14259 -2959 l=70 w=1000 "out2" "vinn" 140 0 "vinp" 1000 0 "out2" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 14130 -2960 14131 -2959 l=70 w=1000 "out2" "vinn" 140 0 "out2" 1000 0 "vinp" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 13854 -2960 13855 -2959 l=70 w=1000 "out2" "vinp" 140 0 "vinn" 1000 0 "out2" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 13726 -2960 13727 -2959 l=70 w=1000 "out2" "vinp" 140 0 "out2" 1000 0 "vinn" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 13450 -2960 13451 -2959 l=70 w=1000 "out2" "vinn" 140 0 "vinp" 1000 0 "out2" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 13322 -2960 13323 -2959 l=70 w=1000 "out2" "vinn" 140 0 "out2" 1000 0 "vinp" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 13046 -2960 13047 -2959 l=70 w=1000 "out2" "vinp" 140 0 "vinn" 1000 0 "out2" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 12918 -2960 12919 -2959 l=70 w=1000 "out2" "vinp" 140 0 "out2" 1000 0 "vinn" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 12642 -2960 12643 -2959 l=70 w=1000 "out2" "vinn" 140 0 "vinp" 1000 0 "out2" 1000 0
+device msubckt sky130_fd_pr__pfet_01v8_lvt 12514 -2960 12515 -2959 l=70 w=1000 "out2" "vinn" 140 0 "out2" 1000 0 "vinp" 1000 0

@@ -1,0 +1,58 @@
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Class rectifier_lvt_01v8_end (0):  Merged 21 parallel devices.
+Class rectifier_lvt_01v8_end (1):  Merged 21 parallel devices.
+Subcircuit summary:
+Circuit 1: rectifier_lvt_01v8_end          |Circuit 2: rectifier_lvt_01v8_end          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (12->2)        |sky130_fd_pr__nfet_01v8_lvt (12->2)        
+sky130_fd_pr__pfet_01v8_lvt (12->2)        |sky130_fd_pr__pfet_01v8_lvt (12->2)        
+sky130_fd_pr__cap_mim_m3_1 (4->3)          |sky130_fd_pr__cap_mim_m3_1 (4->3)          
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__cap_mim_m3_1:C1 vs. sky130_fd_pr__cap_mim_m3_1:C1:
+Property MF in circuit2 has no matching property in circuit1
+sky130_fd_pr__cap_mim_m3_1:C2 vs. sky130_fd_pr__cap_mim_m3_1:C2:
+Property MF in circuit2 has no matching property in circuit1
+sky130_fd_pr__cap_mim_m3_1:C32 vs. sky130_fd_pr__cap_mim_m3_1:C31:
+Property MF in circuit2 has no matching property in circuit1
+sky130_fd_pr__pfet_01v8_lvt:41 vs. sky130_fd_pr__pfet_01v8_lvt:41:
+Property nf in circuit2 has no matching property in circuit1
+sky130_fd_pr__pfet_01v8_lvt:31 vs. sky130_fd_pr__pfet_01v8_lvt:31:
+Property nf in circuit2 has no matching property in circuit1
+sky130_fd_pr__nfet_01v8_lvt:11 vs. sky130_fd_pr__nfet_01v8_lvt:11:
+Property nf in circuit2 has no matching property in circuit1
+sky130_fd_pr__nfet_01v8_lvt:21 vs. sky130_fd_pr__nfet_01v8_lvt:21:
+Property nf in circuit2 has no matching property in circuit1
+
+Subcircuit pins:
+Circuit 1: rectifier_lvt_01v8_end          |Circuit 2: rectifier_lvt_01v8_end          
+-------------------------------------------|-------------------------------------------
+vinp                                       |vinp                                       
+vinn                                       |vinn                                       
+vss                                        |vss                                        
+out1                                       |out1                                       
+out2                                       |out2                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes rectifier_lvt_01v8_end and rectifier_lvt_01v8_end are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ rectifier_lvt_01v8_end

@@ -1,0 +1,31 @@
+** sch_path: /home/karlajcm/Documentos/TESIS DE
+*+ GRADO/WORK_IN_PROGRESS/My_xschem_prueba/Temp_Sensor_tb.sch
+**.subckt Temp_Sensor_tb vdd vtemp
+*.iopin vdd
+*.iopin vtemp
+V1 vdd GND 1.8
+.save i(v1)
+x1 vtemp GND vdd Temperature_Sensor
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice ll
+
+
+
+.control
+save all
+dc temp 0 100 0.1
+plot vtemp
+set wr_singlescale
+set wr_vecnames
+wrdata ts_ll.txt v(vtemp)
+.endc
+
+**** end user architecture code
+**.ends
+
+.include Temperature_Sensor.spice
+
+.GLOBAL GND
+.end
