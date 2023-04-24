@@ -14,7 +14,7 @@ The inductor was designed considering the available area specified by the [Open-
 We modeled the inductor in the CST electromagnetic wave tool. Based on the cross-section of the [SkyWater](https://skywater-pdk.readthedocs.io/en/main/) technology, we implemented the antenna in the top metal layer of the process stack (Metal 5), which has a conductivity of 2.74 MS/m. Since Metal 5 is the thickest metal in the sky130 structure, we can achieve the higher quality factor.  
 
 In the following CST files you can find the designed antenna:
-- [Antenna as CST Coil](./derfiduis/CST/Coil_Skywater.cst)
+- [Antenna as CST Coil](./derfiduis/CST/)
 - [Antenna simulated with Frequency Domain Solver](./)
 - [Antenna + Substrate simulated with Frequency Domain Solver](./)
 
