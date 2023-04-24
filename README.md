@@ -16,7 +16,7 @@ We modeled the inductor in the CST electromagnetic wave tool. Based on the cross
 In the following CST files you can find the designed antenna:
 - [Antenna as CST Coil](./CST/Coil_Skywater.cst)
 - [Antenna simulated with Frequency Domain Solver](./CST/Antena_Skywater_M5.cst)
-- [Antenna + Substrate simulated with Frequency Domain Solver](./CST/Antena_Skywater_M5_sub.cst)
+- [Antenna + Substrate simulated with Frequency Domain Solver](./CST/Antena_Skywater_M5_Sub.cst)
 
 ## Blocks of RFID Tag
 ### Rectifier
