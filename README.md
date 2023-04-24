@@ -15,9 +15,27 @@ We modeled the inductor in the CST electromagnetic wave tool. Based on the cross
 
 In the following CST files you can find the designed antenna:
 - [Antenna as CST Coil](./derfiduis/CST/)
-- [Antenna simulated with Frequency Domain Solver](./)
-- [Antenna + Substrate simulated with Frequency Domain Solver](./)
+- [Antenna simulated with Frequency Domain Solver](./derfiduis/CST/)
+- [Antenna + Substrate simulated with Frequency Domain Solver](./derfiduis/CST/)
 
 ## Blocks of RFID Tag
+### Rectifier
+To supply power to the blocks that compose the RFID tag, it's necessary to transform the energy captured by the tag's inductor into a DC signal. This is achieved with a full-wave rectifier.
+
+The layout is in [rectifier.mag](./derfiduis/MAGIC/).
+Another files related to this circuit are in the folder [RECTIFIER](./derfiduis/MAGIC/)
+
+
+### Voltage Limiter
+The voltage limiter is designed to protect the transistors from high voltages and prevent oxide breakdown or damage to the physical structure.
+
+
+
+### Temperature Sensor
+The operation of the temperature sensor is based on the correlation between temperature and voltage in the PTAT configuration. This circuit allows a linear behavior across the 0°C to 100°C temperatures range.
+
+
+### Swicth for Load Modulation
+This circuit uses a transistor that turns on and off and enables FSK modulation.
 
 
