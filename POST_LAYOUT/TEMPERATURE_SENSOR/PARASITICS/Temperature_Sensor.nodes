@@ -1,0 +1,36 @@
+vtemp 4174 -4879 m1
+vdd -5847 -403 m2
+vss -5847 -5775 m2
+Q4.0.068 -1425 -4257 comment
+Q4.2.090 -1425 -4560 comment
+Q4.0.345 -1323 -4395 comment
+Q4.0.360 -1599 -4283 comment
+Q4.0.310 -1185 -4192 comment
+Q4.0.505 -1104 -4395 comment
+Q4.2.450(nwell) -1425 -4116 comment
+Q4.3.720 -1425 -3954 comment
+Q4.adj. sides -1654 -4241 comment
+Q4.0.12 min -1654 -4220 comment
+Q4.Use 12 licons in base to match PNP model -1418 -4514 comment
+Q4.Use 28 licons in collector to match PNP model -1418 -4647 comment
+Q3.0.068 -2619 -4257 comment
+Q3.2.090 -2619 -4560 comment
+Q3.0.345 -2517 -4395 comment
+Q3.0.360 -2793 -4283 comment
+Q3.0.310 -2379 -4192 comment
+Q3.0.505 -2298 -4395 comment
+Q3.2.450(nwell) -2619 -4116 comment
+Q3.3.720 -2619 -3954 comment
+Q3.adj. sides -2848 -4241 comment
+Q3.0.12 min -2848 -4220 comment
+Q3.Use 12 licons in base to match PNP model -2612 -4514 comment
+Q3.Use 28 licons in collector to match PNP model -2612 -4647 comment
+a_62_n3136# 62 -3135 ndif
+a_n5752_n3086# -5751 -3085 p
+a_n3070_n3662# -3069 -3661 ndif
+a_n3216_n2108# -3215 -2107 ndif
+a_n5810_n2748# -5809 -2747 pdif
+a_n5752_n2774# -5751 -2773 p
+a_n5752_n1958# -5751 -1957 p
+a_n178_n2405# -177 -2404 p
+a_n3836_n1894# -3835 -1893 pdif

@@ -1,0 +1,26 @@
+| units: 500000 tech: sky130A format: MIT
+x vosc vdd a_2140_n4622# vdd l=400 w=2400 x=2054 y=-2287 sky130_fd_pr__pfet_01v8_lvt
+x a_3744_n4622# vdd vosc vdd l=400 w=2400 x=5300 y=-2287 sky130_fd_pr__pfet_01v8_lvt
+x vosc vss a_2140_n4622# vss l=400 w=800 x=2054 y=-3315 sky130_fd_pr__nfet_01v8_lvt
+x vosc vtemp vss l=1000 w=1000 x=5365 y=-4533 sky130_fd_pr__cap_var_lvt
+x a_3744_n4622# vss vosc vss l=400 w=800 x=5300 y=-3315 sky130_fd_pr__nfet_01v8_lvt
+x a_2140_n4622# vtemp vss l=1000 w=1000 x=2140 y=-4533 sky130_fd_pr__cap_var_lvt
+x a_3744_n4622# vtemp vss l=1000 w=1000 x=3744 y=-4533 sky130_fd_pr__cap_var_lvt
+x a_2140_n4622# vdd a_3744_n4622# vdd l=400 w=2400 x=3678 y=-2287 sky130_fd_pr__pfet_01v8_lvt
+x a_2140_n4622# vss a_3744_n4622# vss l=400 w=800 x=3678 y=-3315 sky130_fd_pr__nfet_01v8_lvt
+C a_3744_n4622# vdd 2.34
+C vdd a_2140_n4622# 2.44
+C vosc vtemp 6.73
+C a_3744_n4622# vtemp 2.62
+C a_2140_n4622# vtemp 2.51
+C vosc GND 7.33
+R vosc 13271
+C vtemp GND 18.18
+R vtemp 20466
+C vdd GND 21.08
+R vdd 59798
+R vss 28386
+C a_3744_n4622# GND 4.48
+R a_3744_n4622# 13269
+C a_2140_n4622# GND 4.54
+R a_2140_n4622# 13269

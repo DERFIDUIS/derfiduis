@@ -1,0 +1,14 @@
+* NGSPICE file created from ring_oscillator.ext - technology: sky130A
+
+.subckt ring_oscillator vtemp vosc vdd vss
+M1 a_2140_n4622# vosc vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=3.48e+12p pd=2.458e+07u as=1.08e+13p ps=7.38e+07u w=1.2e+07u l=2e+06u
+M5 vosc a_3744_n4622# vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=3.48e+12p pd=2.458e+07u as=0p ps=0u w=1.2e+07u l=2e+06u
+M2 a_2140_n4622# vosc vss vss sky130_fd_pr__nfet_01v8_lvt ad=1.16e+12p pd=8.58e+06u as=3.6e+12p ps=2.58e+07u w=4e+06u l=2e+06u
+XC1 vosc vtemp vss sky130_fd_pr__cap_var_lvt w=5e+06u l=5e+06u
+M6 vosc a_3744_n4622# vss vss sky130_fd_pr__nfet_01v8_lvt ad=1.16e+12p pd=8.58e+06u as=0p ps=0u w=4e+06u l=2e+06u
+XC3 a_2140_n4622# vtemp vss sky130_fd_pr__cap_var_lvt w=5e+06u l=5e+06u
+XC2 a_3744_n4622# vtemp vss sky130_fd_pr__cap_var_lvt w=5e+06u l=5e+06u
+M3 a_3744_n4622# a_2140_n4622# vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=3.48e+12p pd=2.458e+07u as=0p ps=0u w=1.2e+07u l=2e+06u
+M4 a_3744_n4622# a_2140_n4622# vss vss sky130_fd_pr__nfet_01v8_lvt ad=1.16e+12p pd=8.58e+06u as=0p ps=0u w=4e+06u l=2e+06u
+.ends
+

@@ -1,0 +1,119 @@
+
+Class Temperature_Sensor (0):  Merged 24 parallel devices.
+Class Temperature_Sensor (1):  Merged 24 parallel devices.
+Subcircuit summary:
+Circuit 1: Temperature_Sensor              |Circuit 2: Temperature_Sensor              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (21->6)        |sky130_fd_pr__nfet_01v8_lvt (21->6)        
+sky130_fd_pr__pfet_01v8_lvt (13->7)        |sky130_fd_pr__pfet_01v8_lvt (13->7)        
+sky130_fd_pr__nfet_01v8 (4->1)             |sky130_fd_pr__nfet_01v8 (4->1)             
+sky130_fd_pr__pnp_05v5_W3p40L3p40 (2)      |sky130_fd_pr__pnp_05v5_W3p40L3p40 (2)      
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__pnp_05v5_W3p40L3p40:4 network:
+  l = 2
+  w = 5
+  ps = 5.29
+  as = 0.725
+  pd = 10.6
+  ad = 1.5
+  l = 2
+  w = 5
+  ps = 10.6
+  as = 1.5
+  pd = 5.29
+  ad = 0.725
+  l = 2
+  w = 5
+  ps = 10.6
+  as = 1.5
+  pd = 5.29
+  ad = 0.725
+  l = 2
+  w = 5
+  ps = 5.29
+  as = 0.725
+  pd = 10.6
+  ad = 1.5
+Circuit 2 instance sky130_fd_pr__pnp_05v5_W3p40L3p40:4 network:
+  m = 1
+  NE = 1
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__pnp_05v5_W3p40L3p40:4 network:
+  l = 2
+  w = 5
+  ps = 5.29
+  as = 0.725
+  pd = 10.6
+  ad = 1.5
+  l = 2
+  w = 5
+  ps = 10.6
+  as = 1.5
+  pd = 5.29
+  ad = 0.725
+  l = 2
+  w = 5
+  ps = 10.6
+  as = 1.5
+  pd = 5.29
+  ad = 0.725
+  l = 2
+  w = 5
+  ps = 5.29
+  as = 0.725
+  pd = 10.6
+  ad = 1.5
+Circuit 2 instance sky130_fd_pr__pnp_05v5_W3p40L3p40:4 network:
+  m = 1
+  NE = 1
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__pnp_05v5_W3p40L3p40:4 network:
+  l = 2
+  w = 5
+  ps = 5.29
+  as = 0.725
+  pd = 10.6
+  ad = 1.5
+  l = 2
+  w = 5
+  ps = 10.6
+  as = 1.5
+  pd = 5.29
+  ad = 0.725
+  l = 2
+  w = 5
+  ps = 10.6
+  as = 1.5
+  pd = 5.29
+  ad = 0.725
+  l = 2
+  w = 5
+  ps = 5.29
+  as = 0.725
+  pd = 10.6
+  ad = 1.5
+Circuit 2 instance sky130_fd_pr__pnp_05v5_W3p40L3p40:4 network:
+  m = 1
+  NE = 1
+Netlists match uniquely with property errors.
+Circuit 2 Temperature_Sensor instance sky130_fd_pr__pnp_05v5_W3p40L3p40:4 property "NE" has no match in circuit 1.
+Circuit 2 Temperature_Sensor instance sky130_fd_pr__pnp_05v5_W3p40L3p40:3 property "NE" has no match in circuit 1.
+
+Subcircuit pins:
+Circuit 1: Temperature_Sensor              |Circuit 2: Temperature_Sensor              
+-------------------------------------------|-------------------------------------------
+vtemp                                      |vtemp                                      
+vss                                        |vss                                        
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes Temperature_Sensor and Temperature_Sensor are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ Temperature_Sensor

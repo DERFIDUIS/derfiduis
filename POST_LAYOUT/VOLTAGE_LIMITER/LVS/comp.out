@@ -1,0 +1,57 @@
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_1p41 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_1p41 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_1p41 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_1p41 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_xhigh_po_1p41 |Circuit 2: sky130_fd_pr__res_xhigh_po_1p41 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_xhigh_po_1p41 and sky130_fd_pr__res_xhigh_po_1p41 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_5p73 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_5p73 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_5p73 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_5p73 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_xhigh_po_5p73 |Circuit 2: sky130_fd_pr__res_xhigh_po_5p73 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_xhigh_po_5p73 and sky130_fd_pr__res_xhigh_po_5p73 are equivalent.
+
+Class voltage_limiter (0):  Merged 6 parallel devices.
+Class voltage_limiter (0):  Merged 8 series devices.
+Class voltage_limiter (1):  Merged 6 parallel devices.
+Class voltage_limiter (1):  Merged 8 series devices.
+Subcircuit summary:
+Circuit 1: voltage_limiter                 |Circuit 2: voltage_limiter                 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (1)            |sky130_fd_pr__nfet_01v8_lvt (1)            
+sky130_fd_pr__pfet_01v8_lvt (10->4)        |sky130_fd_pr__pfet_01v8_lvt (10->4)        
+sky130_fd_pr__res_xhigh_po_1p41 (10->2)    |sky130_fd_pr__res_xhigh_po_1p41 (10->2)    
+sky130_fd_pr__res_xhigh_po_5p73 (1)        |sky130_fd_pr__res_xhigh_po_5p73 (1)        
+Number of devices: 8                       |Number of devices: 8                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: voltage_limiter                 |Circuit 2: voltage_limiter                 
+-------------------------------------------|-------------------------------------------
+vrec                                       |vrec                                       
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes voltage_limiter and voltage_limiter are equivalent.
+
+Final result: Circuits match uniquely.
+.

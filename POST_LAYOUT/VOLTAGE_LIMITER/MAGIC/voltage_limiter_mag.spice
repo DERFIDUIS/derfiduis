@@ -1,0 +1,27 @@
+* NGSPICE file created from voltage_limiter.ext - technology: sky130A
+
+.subckt voltage_limiter vrec vdd vss
+M4 vss a_4680_n6808# a_3728_n2638# vss sky130_fd_pr__nfet_01v8_lvt ad=6e+11p pd=4.6e+06u as=5.8e+11p ps=4.58e+06u w=2e+06u l=700000u
+M31 a_4680_n6808# a_4680_n6808# a_4750_n2638# vdd sky130_fd_pr__pfet_01v8_lvt ad=1.16e+12p pd=8.58e+06u as=4.72e+12p ps=3.436e+07u w=4e+06u l=350000u
+XR22 a_3474_n6808# a_4076_n3556# vss sky130_fd_pr__res_xhigh_po_1p41 l=1.41e+07u
+XR21 a_4680_n6808# a_4076_n3556# vss sky130_fd_pr__res_xhigh_po_1p41 l=1.41e+07u
+XR33 a_7444_n6808# a_8048_n3556# vss sky130_fd_pr__res_xhigh_po_1p41 l=1.41e+07u
+XR32 a_8652_n6808# a_8048_n3556# vss sky130_fd_pr__res_xhigh_po_1p41 l=1.41e+07u
+M51 vdd a_3728_n2638# vss vdd sky130_fd_pr__pfet_01v8_lvt ad=7.2e+12p pd=5.16e+07u as=1.30947e+14p ps=4.3584e+08u w=4e+06u l=350000u
+XR31 a_8652_n6808# vdd vss sky130_fd_pr__res_xhigh_po_1p41 l=1.41e+07u
+M21 a_4132_n2638# a_4750_n2638# a_4750_n2638# vdd sky130_fd_pr__pfet_01v8_lvt ad=4.72e+12p pd=3.436e+07u as=0p ps=0u w=4e+06u l=350000u
+XR23 a_3474_n6808# a_2872_n3556# vss sky130_fd_pr__res_xhigh_po_1p41 l=1.41e+07u
+M22 a_4750_n2638# a_4750_n2638# a_4132_n2638# vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=4e+06u l=350000u
+M53 vss a_3728_n2638# vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=4e+06u l=350000u
+M54 vdd a_3728_n2638# vss vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=4e+06u l=350000u
+XR24 vss a_2872_n3556# vss sky130_fd_pr__res_xhigh_po_1p41 l=1.41e+07u
+M52 vss a_3728_n2638# vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=4e+06u l=350000u
+XR36 a_6236_n6808# a_3728_n2638# vss sky130_fd_pr__res_xhigh_po_1p41 l=1.41e+07u
+M11 a_4132_n2638# a_4132_n2638# vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=4e+06u l=350000u
+XR35 a_6236_n6808# a_6840_n3556# vss sky130_fd_pr__res_xhigh_po_1p41 l=1.41e+07u
+M32 a_4750_n2638# a_4680_n6808# a_4680_n6808# vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=4e+06u l=350000u
+M12 vdd a_4132_n2638# a_4132_n2638# vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=4e+06u l=350000u
+XR34 a_7444_n6808# a_6840_n3556# vss sky130_fd_pr__res_xhigh_po_1p41 l=1.41e+07u
+XR1 vrec vdd vss sky130_fd_pr__res_xhigh_po_5p73 l=500000u
+.ends
+
