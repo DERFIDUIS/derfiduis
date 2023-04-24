@@ -1,0 +1,64 @@
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Class OPAMP_lvt_PMOS (0):  Merged 14 parallel devices.
+Class OPAMP_lvt_PMOS (1):  Merged 14 parallel devices.
+Subcircuit summary:
+Circuit 1: OPAMP_lvt_PMOS                  |Circuit 2: OPAMP_lvt_PMOS                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (9->4)         |sky130_fd_pr__nfet_01v8_lvt (9->4)         
+sky130_fd_pr__pfet_01v8_lvt (14->5)        |sky130_fd_pr__pfet_01v8_lvt (14->5)        
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__cap_mim_m3_1:C2 vs. sky130_fd_pr__cap_mim_m3_1:C2:
+Property MF in circuit2 has no matching property in circuit1
+sky130_fd_pr__pfet_01v8_lvt:21 vs. sky130_fd_pr__pfet_01v8_lvt:21:
+Property nf in circuit2 has no matching property in circuit1
+sky130_fd_pr__pfet_01v8_lvt:31 vs. sky130_fd_pr__pfet_01v8_lvt:31:
+Property nf in circuit2 has no matching property in circuit1
+sky130_fd_pr__pfet_01v8_lvt:61 vs. sky130_fd_pr__pfet_01v8_lvt:61:
+Property nf in circuit2 has no matching property in circuit1
+sky130_fd_pr__pfet_01v8_lvt:11 vs. sky130_fd_pr__pfet_01v8_lvt:11:
+Property nf in circuit2 has no matching property in circuit1
+sky130_fd_pr__pfet_01v8_lvt:81 vs. sky130_fd_pr__pfet_01v8_lvt:81:
+Property nf in circuit2 has no matching property in circuit1
+sky130_fd_pr__nfet_01v8_lvt:51 vs. sky130_fd_pr__nfet_01v8_lvt:51:
+Property nf in circuit2 has no matching property in circuit1
+sky130_fd_pr__nfet_01v8_lvt:41 vs. sky130_fd_pr__nfet_01v8_lvt:41:
+Property nf in circuit2 has no matching property in circuit1
+sky130_fd_pr__nfet_01v8_lvt:71 vs. sky130_fd_pr__nfet_01v8_lvt:71:
+Property nf in circuit2 has no matching property in circuit1
+sky130_fd_pr__nfet_01v8_lvt:91 vs. sky130_fd_pr__nfet_01v8_lvt:91:
+Property nf in circuit2 has no matching property in circuit1
+
+Subcircuit pins:
+Circuit 1: OPAMP_lvt_PMOS                  |Circuit 2: OPAMP_lvt_PMOS                  
+-------------------------------------------|-------------------------------------------
+vinn                                       |vinn                                       
+vinp                                       |vinp                                       
+out                                        |out                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes OPAMP_lvt_PMOS and OPAMP_lvt_PMOS are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ OPAMP_lvt_PMOS
