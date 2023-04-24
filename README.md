@@ -29,28 +29,28 @@ Another files related to this circuit are in the folder [RECTIFIER](./POST_LAYOU
 ### Voltage Limiter
 The voltage limiter is designed to protect the transistors from high voltages and prevent oxide breakdown or damage to the physical structure.
 
-The layout is in [rectifier.mag](./MAGIC/voltage_limiter.mag).
+The layout is in [voltage_limiter.mag](./MAGIC/voltage_limiter.mag).
 Another files related to this circuit are in the folder [VOLTAGE_LIMITER](./POST_LAYOUT/VOLTAGE_LIMITER/)
 
 
 ### Temperature Sensor
 The operation of the temperature sensor is based on the correlation between temperature and voltage in the PTAT configuration. This circuit allows a linear behavior across the 0°C to 100°C temperatures range.
 
-The layout is in [rectifier.mag](./MAGIC/Temperature_Sensor.mag).
+The layout is in [Temperature_Sensor.mag](./MAGIC/Temperature_Sensor.mag).
 Another files related to this circuit are in the folder [TEMPERATURE_SENSOR](./POST_LAYOUT/TEMPERATURE_SENSOR/)
 
 
 ### Ring Oscillator
 The ring oscillator generates a periodic oscillation, the frequency of which is determined by the delay of each inverter in the ring, which is influenced by the sizes of the transistors, the bias voltage, and the capacitive load at the output of each inverter.
 
-The layout is in [rectifier.mag](./MAGIC/ring_oscillator.mag).
+The layout is in [ring_oscillator.mag](./MAGIC/ring_oscillator.mag).
 Another files related to this circuit are in the folder [RING_OSCILLATOR](./POST_LAYOUT/RING_OSCILLATOR/)
 
 
 ### Swicth for Load Modulation
 This circuit uses a transistor that turns on and off and enables FSK modulation.
 
-The layout is in [rectifier.mag](./MAGIC/load_modulation.mag).
+The layout is in [load_modulation.mag](./MAGIC/load_modulation.mag).
 Another files related to this circuit are in the folder [LOAD_MOD](./POST_LAYOUT/LOAD_MODULATION/MAGIC/)
 
 
