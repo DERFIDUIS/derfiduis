@@ -5,7 +5,7 @@ This project was developed by the students **Antony Brayan Sanabria Calderón** 
 
 This project presents a passive fully-integrated RFID tag designed in a 130 nm open-access node using sky130 the process design kit (PDK). The RFID tag includes a full-wave rectifier and a voltage limiter to energize the internal blocks, which include a temperature sensor, a ring oscillator, and a switch for load modulation. The tag is powered only by the RF signal received from the reader, eliminating the need for an external power source. Simulations were performed to check the operation of the blocks at the schematic and post-layout levels.  
 
-> Detailed documentation of this project could be read here: [paper](.PAPER/Conference_RFID.pdf)  
+> Detailed documentation of this project could be read here: [paper](./PAPER/Conference_RFID.pdf)  
 
 
 ## CST: Antenna Design  
