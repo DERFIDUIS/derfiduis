@@ -1,0 +1,29 @@
+* NGSPICE file created from OPAMP_lvt_PMOS.ext - technology: sky130A
+
+.subckt OPAMP_lvt_PMOS vinp vinn out vdd vss
+M41 a_4732_n3452# a_4732_n3452# vss vss sky130_fd_pr__nfet_01v8_lvt ad=5.8e+11p pd=4.58e+06u as=5.4e+12p ps=4.14e+07u w=2e+06u l=2e+06u
+M71 vss a_6196_n3426# out vss sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=1.16e+12p ps=9.16e+06u w=2e+06u l=2e+06u
+M81 a_3668_n3452# a_3668_n3452# vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=1.45e+12p pd=1.058e+07u as=9e+12p ps=6.36e+07u w=5e+06u l=2e+06u
+M11 a_5542_n2384# a_3668_n3452# vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=1.49e+13p pd=1.0596e+08u as=0p ps=0u w=5e+06u l=2e+06u
+M31 a_6196_n3426# vinp a_5542_n2384# vdd sky130_fd_pr__pfet_01v8_lvt ad=2.9e+12p pd=2.116e+07u as=0p ps=0u w=5e+06u l=2e+06u
+M32 a_5542_n2384# vinp a_6196_n3426# vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=5e+06u l=2e+06u
+M12 a_5542_n2384# a_3668_n3452# vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=5e+06u l=2e+06u
+XC2 a_6196_n3426# out sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5e+06u
+M33 a_5542_n2384# vinp a_6196_n3426# vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=5e+06u l=2e+06u
+M51 a_6196_n3426# a_4732_n3452# vss vss sky130_fd_pr__nfet_01v8_lvt ad=5.8e+11p pd=4.58e+06u as=0p ps=0u w=2e+06u l=2e+06u
+M52 vss a_4732_n3452# a_6196_n3426# vss sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2e+06u l=2e+06u
+M72 out a_6196_n3426# vss vss sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2e+06u l=2e+06u
+M21 a_4732_n3452# vinn a_5542_n2384# vdd sky130_fd_pr__pfet_01v8_lvt ad=2.9e+12p pd=2.116e+07u as=0p ps=0u w=5e+06u l=2e+06u
+M82 vdd a_3668_n3452# a_3668_n3452# vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=5e+06u l=2e+06u
+M22 a_5542_n2384# vinn a_4732_n3452# vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=5e+06u l=2e+06u
+M34 a_6196_n3426# vinp a_5542_n2384# vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=5e+06u l=2e+06u
+M61 out a_3668_n3452# vdd vdd sky130_fd_pr__pfet_01v8_lvt ad=1.45e+12p pd=1.058e+07u as=0p ps=0u w=5e+06u l=2e+06u
+M91 a_3668_n3452# a_3668_n3452# vss vss sky130_fd_pr__nfet_01v8_lvt ad=5.8e+11p pd=4.58e+06u as=0p ps=0u w=2e+06u l=2e+06u
+M92 vss a_3668_n3452# a_3668_n3452# vss sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2e+06u l=2e+06u
+M23 a_4732_n3452# vinn a_5542_n2384# vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=5e+06u l=2e+06u
+M42 vss a_4732_n3452# a_4732_n3452# vss sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2e+06u l=2e+06u
+M62 vdd a_3668_n3452# out vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=5e+06u l=2e+06u
+M24 a_5542_n2384# vinn a_4732_n3452# vdd sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=5e+06u l=2e+06u
+M73 out a_6196_n3426# vss vss sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=2e+06u l=2e+06u
+.ends
+
